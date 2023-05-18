@@ -7,6 +7,7 @@ public class Quiz02 {
 		
 	
 		Scanner sc = new Scanner(System.in);
+		/*
 		int num1,num2,num3,max;
 	
 		System.out.print("첫번째수: ");
@@ -25,5 +26,23 @@ public class Quiz02 {
 			max = num3;
 		}
 		System.out.println("가장 큰 수는" + max + "입니다.");
+	*/
+		String name;
+		int kor, mat, eng, total;
+		
+		
+		System.out.print("이름입력: ");
+		name = sc.next();
+		System.out.print("국어점수입력: ");
+		kor = sc.nextInt();
+		System.out.print("수합점수입력: ");
+		mat = sc.nextInt();
+		System.out.print("영어점수입력: ");
+		eng = sc.nextInt();
+		total = kor+mat+eng;
+		double avg = total/3.0;
+		
+		System.out.println("이름: " + name + "\t 총합: " + total);
+		System.out.printf("평균: %.2f", avg);
 	}
 }
